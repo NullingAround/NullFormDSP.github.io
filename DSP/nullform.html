@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null Form DSP — Nigredo</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            background-color: #000000;
+            color: #d0d0d0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .brand {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .brand-title {
+            font-size: 2.8rem;
+            font-weight: 200;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-subtitle {
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #707070;
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #2a2a2a;
+            margin: 2.5rem auto;
+        }
+
+        .philosophy {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .philosophy p {
+            font-size: 0.95rem;
+            color: #888888;
+            max-width: 540px;
+            margin: 0 auto;
+            letter-spacing: 0.02em;
+        }
+
+        .features {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .features-heading {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #505050;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .feature-list li {
+            border-bottom: 1px solid #1a1a1a;
+            padding: 1.1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .feature-name {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #c8c8c8;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+
+        .feature-desc {
+            font-size: 0.85rem;
+            color: #606060;
+            text-align: right;
+            letter-spacing: 0.01em;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 0.85rem 2.8rem;
+            background-color: #1c1c1c;
+            color: #b0b0b0;
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border: 1px solid #2a2a2a;
+            cursor: pointer;
+            transition: none;
+        }
+
+        .download-btn:hover {
+            background-color: #2a2a2a;
+            color: #d0d0d0;
+            border-color: #3a3a3a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid #0e0e0e;
+        }
+
+        footer p {
+            font-size: 0.7rem;
+            color: #383838;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 3rem 1.25rem;
+            }
+
+            .brand-title {
+                font-size: 1.8rem;
+                letter-spacing: 0.25em;
+            }
+
+            .brand-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .philosophy p {
+                font-size: 0.9rem;
+            }
+
+            .feature-list li {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .feature-desc {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="brand">
+            <h1 class="brand-title">Null Form DSP</h1>
+            <p class="brand-subtitle">Nigredo</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="philosophy">
+            <p>
+                Controlled sonic degradation. Nigredo operates on the principle of
+                reduction before reconstruction — raw signal is passed through
+                structured distortion stages, stripped of inessential content,
+                and reshaped into dense, deliberate texture. The process is
+                subtractive by nature. What remains is form derived from noise.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="features">
+            <h2 class="features-heading">Parameters</h2>
+            <ul class="feature-list">
+                <li>
+                    <span class="feature-name">Nigredo</span>
+                    <span class="feature-desc">Parallel mix control — dry/wet balance of the degraded signal</span>
+                </li>
+                <li>
+                    <span class="feature-name">Drive</span>
+                    <span class="feature-desc">Distortion intensity — continuous blending through saturation stages</span>
+                </li>
+                <li>
+                    <span class="feature-name">LP Focus</span>
+                    <span class="feature-desc">Low-pass filter before fuzz — 0 to 200 Hz isolation of sub content</span>
+                </li>
+                <li>
+                    <span class="feature-name">Post Tone</span>
+                    <span class="feature-desc">High-pass shaping after distortion — removes low-end residue up to 350 Hz</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="download-section">
+            <a href="https://drive.google.com/file/d/1lqhuPeY3VOKt8aMVfYIUjf38dGTdKJVA/view?usp=drive_link" class="download-btn">Download Nigredo</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Null Form DSP</p>
+    </footer>
+
+</body>
+</html>
